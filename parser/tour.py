@@ -1,6 +1,6 @@
 
 
-from models.regex_extraction import RegexExtraction
+from models.regex_extractor import RegexExtraction
 import pandas as pd
 import numpy as np
 import uuid
@@ -10,7 +10,7 @@ from datetime import datetime
 
 
 def parse_tour_clean(log_text: str, normalize: bool = True) -> list[dict]:
-    from RegexExtraction import RegexExtraction  
+    from models.regex_extractor import RegexExtraction  
 
     hands = re.split(r'\n\s*\n', log_text.strip())
     hands = list(reversed([h for h in hands if h.strip()]))  
