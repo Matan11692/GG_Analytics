@@ -1,6 +1,6 @@
 
 
-from Models.regex_extraction import RegexExtraction
+from models.regex_extraction import RegexExtraction
 import pandas as pd
 import numpy as np
 import uuid
